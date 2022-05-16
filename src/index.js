@@ -1,6 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+<<<<<<< Updated upstream
+=======
+
+import App from './App';
+
+import { UserProvider } from './contexts/user.contexts';
+import { ProductsProvider } from './contexts/product.context';
+>>>>>>> Stashed changes
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -8,7 +16,15 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+<<<<<<< Updated upstream
     <App />
+=======
+    <UserProvider>
+     <ProductsProvider>
+      <App />  
+     </ProductsProvider>
+    </UserProvider>
+>>>>>>> Stashed changes
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
